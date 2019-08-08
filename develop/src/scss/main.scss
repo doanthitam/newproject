@@ -9,8 +9,9 @@ html {
 @import "helpers/mixin";
 
 // 2. Vendors
-//@import "vendor/jquery";
-
+@import "vendor/jquery";
+@import "vendor/slick";
+@import "vendor/slick-theme";
 // 3. Base
 @import "base/normalize";
 //@import "base/font";
@@ -22,4 +23,5 @@ html {
 }
 @media screen and (max-width: 768px) {
   @import "page/top_sp";
+  @import "common/header_sp";
 }

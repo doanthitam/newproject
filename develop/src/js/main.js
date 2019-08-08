@@ -13,7 +13,7 @@ $(window).scroll(function(){
 
 $("#js-menuButton").on("click", function() {
  $(this).toggleClass("active");
- $("#js-menu").toggle();
+ $("#js-menu").slideToggle(400);
  if ($(window).width() < 768) {
    $("#js-menu li").hide();
    $("#js-menu li").each(function(i) {
@@ -25,12 +25,23 @@ $("#js-menuButton").on("click", function() {
  return false;
 });
 
-// // Anchor
-// $('a[href^="#"]').click(function(){
-//   var hasttop = $(this.hash).offset().top;
-//   var hasttopNew = hasttop - 104;
-//   $('html, body').animate({
-//     scrollTop: hasttopNew
-//   }, 500);
-//   return false;
-// });
+	//slick
+$(function() {
+  $('.Slider').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    dots: true,
+    arrows: false,
+    speed: 2000,
+    fade: true,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    pauseOnDotsHover: false,
+  });
+
+  /* ニューススライドショー */
+  $('.Slider').slick({
+    cssEase: 'ease-out',
+    speed: 500,
+  });
+});
