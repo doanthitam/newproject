@@ -111,22 +111,6 @@ header {
     justify-content: space-between;
     width: 100%;
     transition: all 0.3s ease;
-    .logo_02 {
-      a {
-        width: 300px;
-        font-size: 0;
-        display: block;
-        transition: .3s;
-        &:hover {
-          opacity: 0.8;
-        }
-      }
-    }
-    .btn {
-      a {
-        margin: 0 20px;
-      }
-    }
   }
 }
 

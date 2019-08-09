@@ -25,23 +25,38 @@ $("#js-menuButton").on("click", function() {
  return false;
 });
 
-	//slick
-$(function() {
-  $('.Slider').slick({
+
+// photo slider/
+
+$(function(){
+  $('#list_photo').slick({
     autoplay: true,
     autoplaySpeed: 3000,
+    swipe: false,
+    swipeToSlide: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     dots: true,
     arrows: false,
     speed: 2000,
     fade: true,
     pauseOnHover: false,
     pauseOnFocus: false,
-    pauseOnDotsHover: false,
+    pauseOnDotsHover: false
   });
 
-  /* ニューススライドショー */
-  $('.Slider').slick({
-    cssEase: 'ease-out',
-    speed: 500,
+  //event_photo//
+  $('#event_photo').slick({
+    slidesToShow: 3,
+    centerPadding: '2px',
+    centerMode: true,
+    variableWidth: true,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 8000,
+    cssEase: 'linear',
+    pauseOnFocus: false,
+    arrows: false,
+    dot: false
   });
 });
